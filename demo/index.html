@@ -22,10 +22,26 @@
   </head>
   <body>
     <div class="vertical-section-container centered" style="max-width:1000px">
-      <h3>Basic polymer-store demo</h3>
+      <h3>Set polymer-store demo</h3>
       <demo-snippet>
         <template>
-          <polymer-store debug operation="delete" key="name" value="test2"></polymer-store>
+          <polymer-store debug operation="set" key="name" value="test1"></polymer-store>
+        </template>
+      </demo-snippet>
+    </div>
+    <div class="vertical-section-container centered" style="max-width:1000px">
+      <h3>Set polymer-store demo</h3>
+      <demo-snippet>
+        <template>
+          <polymer-store debug overwite operation="set" key="name" value="test2"></polymer-store>
+        </template>
+      </demo-snippet>
+    </div>
+    <div class="vertical-section-container centered" style="max-width:1000px">
+      <h3>Get polymer-store demo</h3>
+      <demo-snippet>
+        <template>
+          <polymer-store debug operation="get" key="name"></polymer-store>
         </template>
       </demo-snippet>
     </div>

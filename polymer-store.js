@@ -82,19 +82,21 @@ class PolymerStore extends PolymerElement {
           }
         })
       }
+      resolve(true)
     })
   }
 
   get(key){
     return new Promise((resolve, reject) => {
-      resolve(localStorage.getItem(key))
+      this.result = localStorage.getItem(key)
+      resolve(this.result)
     })
   }
 
   delete(key){
     return new Promise((resolve, reject) => {
-      console.log("FIRE DEL")
-      resolve(localStorage.removeItem(key))
+      this.result = localStorage.removeItem(key)
+      resolve(this.result)
     })
   }
 
