@@ -71,18 +71,8 @@ class PolymerStore extends PolymerElement {
 
   set(key, value){
     return new Promise((resolve, reject) => {
-      if(this.overwrite){
-        localStorage.setItem(key, value);
-      }
-      if(!this.overwrite){
-        this.get(key)
-        .then((val)=>{
-          if(val == null){
-            localStorage.setItem(key, value);
-          }
-        })
-      }
-      resolve(true)
+        this.result = localStorage.setItem(key, value);
+        resolve(this.result)
     })
   }
 
