@@ -1,6 +1,10 @@
 {
   "name": "polymer-store",
   "main": "polymer-store.js",
+  "version": "1.0.0",
+  "author": "@bkawk",
+  "license": "MIT",
+  "repository": "https://github.com/bkawk/polymer-store",
   "dependencies": {
     "@polymer/polymer": "^3.0.0"
   },
